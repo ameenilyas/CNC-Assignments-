@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ch-31-34</title>
+
+<script>
+
+var months = ['Jan','Feb','March','April','May','June','July','Aug','Sep','Oct','Nov','Dec'];
+
+var name = prompt("Enter Your Name..");
+var date = prompt("Enter Your DOB(Date)",);
+var month = prompt("Enter Your DOB(Month)");
+var year = prompt("Enter Your DOB(Year)");
+
+
+console.log("Hello " + name + ", Good Morning");
+
+var info = new Date(months[month] + date + ',' + year);
+console.log(info);
+
+
+// Age in Years
+var ageInYears = new Date() - info;
+ageInYears = Math.floor(ageInYears / (1000 * 60 * 60 *24 * 365)) ;
+
+console.log("You are " + ageInYears + " years old..");
+
+// Age in Months
+var ageInMonths = new Date() - info;
+ageInMonths = Math.floor(ageInMonths / ((1000 * 60 * 60 *24 * 365) /12)) ;
+
+console.log("Your age in Months " + ageInMonths);
+ 
+// Age in Days
+var ageInDays = new Date() - info;
+ageInDays = Math.floor(ageInDays / (1000 * 60 * 60 *24 )) ;
+
+console.log("Your age in Days " + ageInDays);
+
+// Age in Hours
+var ageInHours = new Date() - info;
+ageInHours = Math.floor(ageInHours / (1000 * 60 * 60 )) ;
+
+console.log("Your age in Hours " + ageInHours);
+
+// Remaining Days of Your Birthday
+var nextYear = new Date().getFullYear() + 1;
+
+var nextDOB = new Date(months[month] + date + ',' + nextYear) - new Date();
+nextDOB = Math.floor(nextDOB / (1000 * 60 * 60 * 24 )) ; 
+console.log(nextDOB + " days left To your BIRTHDAY");
+
+
+
+</script>
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

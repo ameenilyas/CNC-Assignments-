@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ch-21-30</title>
+<script>
+
+// Ceil Operator
+
+var num = Number(prompt("Enter a Decimal Number.."));
+num = Math.ceil(num);
+alert(num);
+
+// reverse the word
+
+var text = "This is my dummy text..";
+var slicedText = text.slice(0,4);
+alert(slicedText);  
+console.log(slicedText.split("").reverse().join(""));
+ 
+
+// capitalize sentence
+
+var input = prompt("Enter Your Course Name..").toLowerCase();
+
+var arr = input.split(' ');
+console.log(arr);
+
+for(var i = 0; i < arr.length ; i++){
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+}
+console.log(arr.join(" "));
+
+</script>
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

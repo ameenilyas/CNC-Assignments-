@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ch-39-42</title>
+    <script>
+
+      var course1 = Number(prompt("Enter Your Course Number"));
+          var course2 = Number(prompt("Enter Your Course Number"));
+          var course3 = Number(prompt("Enter Your Course Number"));
+          var course4 = Number(prompt("Enter Your Course Number"));
+          var course5 = Number(prompt("Enter Your Course Number"));
+      
+          var courses = course1 + course2 + course3 + course4 + course5;
+          percentage = courses * 100 / 500;
+          console.log(percentage);
+        
+      
+      switch(true){
+        case ((percentage >= 90) && (percentage <= 100)):
+          console.log("A+ Grade");
+          break;
+        case ((percentage >= 75) && (percentage <= 89)):
+          console.log("A Grade");
+          break;
+        case ((percentage >= 60) && (percentage <= 74)):
+          console.log("B Grade");
+          break;
+        case ((percentage >= 45) && (percentage <= 59)):
+          console.log("C Grade");
+          break;
+        case ((percentage >= 30 && percentage <= 44)):
+          console.log("D Grade");
+          break; 
+        case (percentage <= 29):
+          console.log("F Grade");
+          break;
+        default:
+          console.log("Wrong");
+          break;
+      }
+      
+      </script>
+          
+    
+    
+    
+</head>
+<body>
+    
+</body>
+</html>
